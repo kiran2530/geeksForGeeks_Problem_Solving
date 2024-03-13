@@ -53,8 +53,8 @@ public class count_pairs_given_sum {
         return count;
     }
     public static void main(String[] args) {
-        int n = 4, k = 6;
-        int[] arr = {1,5,7,1};
+        int n = 4, k = 8;
+        int[] arr = {1,5,7,3};
         System.out.println(getPairsCount(arr, n, k));
     }
 }
