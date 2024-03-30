@@ -32,8 +32,6 @@
     0 <= n <= 10^4
  */
 
-import org.w3c.dom.Node;
-
 public class march_30_24 {
 class Node {
     int data;
