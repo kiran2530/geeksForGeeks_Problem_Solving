@@ -57,9 +57,9 @@ public class april_15_24 {
         return ans;
     }
     public static void main(String[] args) {
-        int n = 3;
-        int a[] = {4,1,2,5};
-        int b[] = {1,7,3,2};
+        int n = 5;
+        int a[] = {4,1,2,5,8};
+        int b[] = {1,7,3,2,6};
         int q = 2;
         int query[] = {0,1};
         int[] ans = countElements(a, b, n, query, q);
