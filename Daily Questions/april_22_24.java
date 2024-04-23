@@ -55,8 +55,8 @@ public class april_22_24 {
     }
 
     public static void main(String[] args) {
-        int[][] a = {{1,1,1,1},{1,1,0,0},{0,0,1,1},{1,1,1,1}};
-        int n=4,m=4;
+        int[][] a = {{0,0,0},{0,0,0},{0,0,0}};
+        int n=3,m=3;
         System.out.println(minRow(n, m, a));
     }
 }
