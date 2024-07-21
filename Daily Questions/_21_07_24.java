@@ -42,6 +42,8 @@ public class _21_07_24 {
             long ans = obj.findMaxProduct(list);
 
             System.out.println(ans);
+
+            sc.close();
     }
 }
 // } Driver Code Ends
