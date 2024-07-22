@@ -102,27 +102,8 @@ class _22_07_24 {
     
         return root;
     }
-    
-    public static void main(String args[]) throws IOException {
-    
-       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int t = Integer.parseInt(br.readLine().trim());
-        while(t>0)
-        {
-            String s = br.readLine();
-            Node root = buildTree(s);
-            
-            Solution T = new Solution();
-            System.out.println(T.largestBst(root));
-            
-            t--;
-        }
-    }
-}
 
-class Solution{
-    
-    // Return the size of the largest sub-tree which is also a BST
+
     static int largestBst(Node root)
     {
         // Write your code here
@@ -163,5 +144,22 @@ class Solution{
         if (root == null) return 0;
         return getSize(root.left) + getSize(root.right) + 1;
     }
+    
+    public static void main(String args[]) throws IOException {
+    
+       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int t = Integer.parseInt(br.readLine().trim());
+        while(t>0)
+        {
+            String s = br.readLine();
+            Node root = buildTree(s);
+            
+            int result = largestBst(root);
+            System.out.println(result);
+            
+            t--;
+        }
+    }
 }
+
 
