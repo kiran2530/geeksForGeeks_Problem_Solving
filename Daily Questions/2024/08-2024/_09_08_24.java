@@ -23,20 +23,21 @@
 import java.util.Arrays;
 
 public class _09_08_24 {
-    public static int Maximize(int arr[]) {
-        Arrays.sort(arr);
 
-        int modulo = 1000000007;
-        long sum = 0;
+  public static int Maximize(int arr[]) {
+    Arrays.sort(arr);
 
-        for (int i = 0; i < arr.length; i++) {
-            sum = (sum + ((long)arr[i] * i)) % modulo; 
-        }
+    int modulo = 1000000007;
+    long sum = 0;
 
-        return (int)sum;
+    for (int i = 0; i < arr.length; i++) {
+      sum = (sum + ((long) arr[i] * i)) % modulo;
     }
-    public static void main(String[] args) {
-        int[] arr = {5,3,2,4,1};
-        System.out.println(Maximize(arr));
-    }
+    return (int) sum;
+  }
+
+  public static void main(String[] args) {
+    int[] arr = { 5, 3, 2, 4, 1 };
+    System.out.println(Maximize(arr));
+  }
 }
