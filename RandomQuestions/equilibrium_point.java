@@ -1,3 +1,4 @@
+package RandomQuestions;
 /*
  *Q) Equilibrium Point
     Given an array A of n non negative numbers. The task is to find the first equilibrium point in an array. Equilibrium point in an array is an index (or position) such that the sum of all elements before that index is same as sum of elements after it.

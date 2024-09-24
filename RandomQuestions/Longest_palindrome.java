@@ -1,3 +1,4 @@
+package RandomQuestions;
 public class Longest_palindrome {
     public static boolean isPalindrome(String s, int i, int j) {
         while (i<=j) {
